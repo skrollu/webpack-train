@@ -1,3 +1,4 @@
 #gsap {
+    position: absolute;
     color: red;
 }

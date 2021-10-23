@@ -1,7 +1,7 @@
 import { gsap } from 'gsap';
 
 console.log("coucou")
-gsap.to('#gsap', {rotation: 27, x: 100, duration: 1});
+gsap.to('#gsap', {rotation: 27, x: 300, duration: 1});
 
 import Swup from 'swup'
 import SwupFadeTheme from '@swup/fade-theme';
