@@ -15,6 +15,10 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@swup/fade-theme": "^1.0.5",
+    "@swup/head-plugin": "^1.2.0",
+    "gsap": "^3.8.0",
+    "lodash": "^4.17.21",
+    "swup": "^2.0.14"
   }
 }

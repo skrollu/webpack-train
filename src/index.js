@@ -1,12 +1,19 @@
-import lodash from 'lodash';
+import { gsap } from 'gsap';
 
-function component() {
-    const element = document.createElement('div');
+console.log("coucou")
+gsap.to('#gsap', {rotation: 27, x: 100, duration: 1});
 
-    // Lodash, now imported by this script
-    element.innerHTML = lodash.join(['Hello', 'webpack'], ' ');
+import Swup from 'swup'
+import SwupFadeTheme from '@swup/fade-theme';
+import SwupHeadPlugin from '@swup/head-plugin';
 
-    return element;
-}
-
-document.body.appendChild(component());
+const swup = new Swup({
+    linkSelector:
+    'a[href^="' +
+    window.location.origin +
+    '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])',
+    plugins: [
+        new SwupFadeTheme(),
+        new SwupHeadPlugin()
+        ]
+});
