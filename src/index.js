@@ -17,3 +17,7 @@ const swup = new Swup({
         new SwupHeadPlugin()
         ]
 });
+
+import styles from "./app.css";
+
+console.log(styles);
